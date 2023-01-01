@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 40px;
+}
+
+.button {
+  background-color: darkcyan;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(3, 179, 179);
+}
+
+.button:active {
+  background-color: rgb(1, 79, 79);
+}
+
+.button-secondary {
+  background-color: rgb(245, 224, 255);
+}
