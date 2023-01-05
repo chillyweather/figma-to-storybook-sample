@@ -6,4 +6,7 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+  designToken: {
+    defaultTab: "Colors",
+  },
+};

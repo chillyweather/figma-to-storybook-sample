@@ -20,21 +20,27 @@ code {
 }
 
 .button {
-  background-color: darkcyan;
-  color: white;
-  font-size: 16px;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
   border-radius: 8px;
-  padding: 8px 16px;
-  border: none;
   cursor: pointer;
+  display: flex;
+  gap: 8px;
+  line-height: 1;
+  color: white;
+  background-color: #0E9CA5;
+  font-size: 16px;
+  padding: 8px 16px;
+
 }
 
 .button:hover {
-  background-color: rgb(3, 179, 179);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .2) inset;
 }
 
 .button:active {
-  background-color: rgb(1, 79, 79);
+  opacity: .9;
 }
 
 .button-secondary {

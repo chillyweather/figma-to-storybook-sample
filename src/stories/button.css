@@ -1,35 +1,78 @@
-.storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 0.7em;
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1;
-}
 
-.storybook-button--primary {
-  color: white;
-  background-color: darkcyan;
-}
+    :root {
+      /**
+    * @tokens Spacings
+    * @presenter Spacing
+    */
+      --global-gap-s: 8px;
+      --global-gap-m: 16px;
+      --global-gap-l: 32px;
+      --label-gap: 32px;
+    
+      /**
+    * @tokens BorderRadius
+    * @presenter BorderRadius
+    */
+      --global-border-s: 4px;
+      --global-border-l: 32px;
+      --button-border-radius: 999px;
+    
+      /**
+    * @tokens Colors
+    * @presenter Color
+    */
+      --global-light-grey: #F5F5F5;
+      --global-light-blue: #EAFBFF;
+      --global-mid-blue: #0375B5;
+      --global-dark-red: #AA0000;
+      --button-color: #F9EF94;
+      --button-background: #670377
+    }
+    
+    
+    .storybook-button {
+      font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      border: 0;
+      border-radius: var(--button-border-radius);
+      cursor: pointer;
+      display: flex;
+      gap: var(--label-gap);
+      padding-left: 24px;
+      padding-right: 24px;
+      line-height: 1;
+    }
+    
+    .storybook-button--primary {
+      color: var(--button-color);
+      background-color: var(--button-background);
+    }
 
-.storybook-button--secondary {
-  color: #333;
-  background-color: lightcyan;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-}
-
-.storybook-button--small {
-  font-size: 12px;
-  padding: 10px 16px;
-}
-
-.storybook-button--medium {
-  font-size: 14px;
-  padding: 11px 20px;
-}
-
-.storybook-button--large {
-  font-size: 16px;
-  padding: 12px 24px;
-}
+    .storybook-button--primary:hover {
+      box-shadow: 0 0 0 2px rgba(255,255,255,.2) inset;
+    }
+    .storybook-button--primary:active {
+      opacity:.9;
+    }
+    
+    .storybook-button--secondary {
+      color: #333;
+      background-color: var(--global-light-blue);
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+    }
+    
+    .storybook-button--small {
+      font-size: 12px;
+      padding: 10px 16px;
+    }
+    
+    .storybook-button--medium {
+      font-size: 14px;
+      padding: 11px 20px;
+    }
+    
+    .storybook-button--large {
+      font-size: 16px;
+      padding: 12px 24px;
+    }    
+    
